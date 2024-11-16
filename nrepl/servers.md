@@ -26,33 +26,11 @@ The following are some implementations that support some nREPL ops.
     * eval
   * non-standard ops
     * info
-* [nrepl-lazuli](https://gitlab.com/clj-editors/nrepl-lazuli) - nrepl
-  server for ruby by mauricioszabo
-  * standard ops
-    * clone
-    * describe
-    * eval
-    * interrupt
-    * load-file
-    * ls-sessions
-  * non-standard ops
-    * eval_pause
-    * eval_resume
-    * get_watches
-    * last_exception
-    * unwatch
-    * update_watch_lines
-    * watches_for_file
 * [nrepl-server](https://github.com/borkdude/nrepl-server) -
   borkdude's prototype
   * standard ops
     * clone
     * describe
-    * eval
-* [ogion](https://gitlab.com/technomancy/ogion) - nrepl server for
-  racket by technomancy
-  * standard ops
-    * clone
     * eval
 
 ## Non-Clojure
@@ -99,10 +77,32 @@ The following are some implementations that support some nREPL ops.
     * describe
     * eval
     * load-file
+* [nrepl-lazuli](https://gitlab.com/clj-editors/nrepl-lazuli) - nrepl
+  server for ruby by mauricioszabo
+  * standard ops
+    * clone
+    * describe
+    * eval
+    * interrupt
+    * load-file
+    * ls-sessions
+  * non-standard ops
+    * eval_pause
+    * eval_resume
+    * get_watches
+    * last_exception
+    * unwatch
+    * update_watch_lines
+    * watches_for_file
 * [nrepl-ruby](https://github.com/delonnewman/nrepl-ruby)
   * standard ops
     * clone
     * describe
+    * eval
+* [ogion](https://gitlab.com/technomancy/ogion) - nrepl server for
+  racket by technomancy
+  * standard ops
+    * clone
     * eval
 * [python-nrepl](https://gitlab.com/sasanidas/python-nrepl)
   * standard ops
