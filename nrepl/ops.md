@@ -50,25 +50,30 @@ helpful, the following seemed a bit better:
 
 ## Subsets of Ops
 
-Based on examining [a number of server implementations](servers.md), it appears that
-there exist useful subsets of the ops.
+Based on examining [a number of server implementations](servers.md),
+it appears that there exist useful subsets of the ops.
 
 It seems possible that just implementing `clone` and `eval` might be
-enough for something useful.  Might make sense to include `describe`
-as well.  If any other ops are to be implemented, it seems like one
-would want to have `describe` so that clients can discover what is
-provided by a server.
+sufficient for significant benefit.  Perhaps including `describe`
+would be good too.  If any other ops are to be implemented, it seems
+like one would want to have `describe` so that clients can discover
+what is provided by a server, though perhaps a client discovering that
+an op is "unknown" based on a server response is sufficient in many
+cases?
 
-If managing of sessions is desired (e.g. to clean up older sessions),
-implementing both `close` and `ls-sessions` seems reasonable.
+If managing of sessions is desired (e.g. to clean up older sessions or
+to learn about what can be connected to ), implementing both `close`
+and `ls-sessions` seems reasonable.
 
-If editor-related functionality is desired, `completions` and/or
-`lookup` seem like good things to implement.
+If editor-related functionality (e.g. completing names or finding
+definitions) is desired, `completions` and/or `lookup` seem like good
+things to implement.
 
 For more evaluation-related capabilities, `load-file` and/or `stdin`
-might be nice to have.  In theory, `interrupt` sounds good, but in
-practice, it may be difficult for various runtimes to support this
-properly.
+(responding to the process hosting the repl via (one of?) its standard
+input(s)) might be nice to have.  In theory, `interrupt` sounds good,
+but in practice, it may be difficult for various runtimes to support
+this properly.
 
 It's unclear how useful middleware might be generally speaking, but if
 that is desired in a dynamic fashion (so not pre-determined at
@@ -83,7 +88,7 @@ investigation?).
 It seems that there are some "non-standard" op names in use.  If there
 are to be extensions to nREPL, may be it would be nicer to "namespace"
 op names that are not "standard" to prevent collisions or "using up"
-of nice names for common use.  This seems tricky though beecause can
+of nice names for common use.  This seems tricky though because can
 one really say there is a standard...
 
 ## Implementation-Independent Information
