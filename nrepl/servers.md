@@ -1,8 +1,9 @@
 # Servers
 
-## Clojure
+The following are some implementations of nREPL servers along with
+which ops appear to be implemented.
 
-The following are some implementations that support some nREPL ops.
+## Clojure
 
 * [babashka.nrepl](https://github.com/babashka/babashka.nrepl) -
   babashka's nrepl server
