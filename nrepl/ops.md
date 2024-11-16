@@ -78,6 +78,14 @@ have.  For more advanced capabilities, one might also want
 could be covered without it (might be nice for development /
 investigation?).
 
+## Ops Naming
+
+It seems that there are some "non-standard" op names in use.  If there
+are to be extensions to nREPL, may be it would be nicer to "namespace"
+op names that are not "standard" to prevent collisions or "using up"
+of nice names for common use.  This seems tricky though beecause can
+one really say there is a standard...
+
 ## Implementation-Independent Information
 
 So far, haven't had much luck finding documentation that isn't tied
