@@ -36,7 +36,7 @@ which ops appear to be implemented.
 
 ## Non-Clojure
 
-* [cl-nrepl](https://github.com/sjl/cl-nrepl)
+* [cl-nrepl](https://github.com/sjl/cl-nrepl) - for common lisp by sjl
   * standard ops
     * clone
     * close
@@ -48,7 +48,8 @@ which ops appear to be implemented.
     * arglist
     * documentation
     * macroexpand
-* [jeejah](https://gitlab.com/technomancy/jeejah)
+* [jeejah](https://gitlab.com/technomancy/jeejah) - for fennel by
+  technomancy
   * standard ops
     * clone
     * close
@@ -62,7 +63,8 @@ which ops appear to be implemented.
     * stdin
   * non-standard ops
     * complete
-* [HyREPL](https://github.com/allison-casey/HyREPL) - no eval...
+* [HyREPL](https://github.com/allison-casey/HyREPL) - for Hy by
+  allison-casey (no eval...)
   * standard ops
     * clone
     * close
@@ -71,15 +73,16 @@ which ops appear to be implemented.
     * stdin
   * non-standard ops
     * client.init
-* [nrepl-cljs-sci](https://github.com/viesti/nrepl-cljs-sci)
+* [nrepl-cljs-sci](https://github.com/viesti/nrepl-cljs-sci) - for
+  nodejs by viesti
   * standard ops
     * clone
     * close
     * describe
     * eval
     * load-file
-* [nrepl-lazuli](https://gitlab.com/clj-editors/nrepl-lazuli) - nrepl
-  server for ruby by mauricioszabo
+* [nrepl-lazuli](https://gitlab.com/clj-editors/nrepl-lazuli) - for
+  ruby by mauricioszabo
   * standard ops
     * clone
     * describe
@@ -95,17 +98,19 @@ which ops appear to be implemented.
     * unwatch
     * update_watch_lines
     * watches_for_file
-* [nrepl-ruby](https://github.com/delonnewman/nrepl-ruby)
+* [nrepl-ruby](https://github.com/delonnewman/nrepl-ruby) - for ruby
+  by delonnewman
   * standard ops
     * clone
     * describe
     * eval
-* [ogion](https://gitlab.com/technomancy/ogion) - nrepl server for
-  racket by technomancy
+* [ogion](https://gitlab.com/technomancy/ogion) - for racket by
+  technomancy
   * standard ops
     * clone
     * eval
-* [python-nrepl](https://gitlab.com/sasanidas/python-nrepl)
+* [python-nrepl](https://gitlab.com/sasanidas/python-nrepl) - for
+  python by sasanidas
   * standard ops
     * clone
     * completions
@@ -113,7 +118,7 @@ which ops appear to be implemented.
     * eval
     * load-file
     * ls-sessions
-* [R-nREPL](https://github.com/vspinu/R-nREPL)
+* [R-nREPL](https://github.com/vspinu/R-nREPL) - for r by vspinu
   * standard ops
     * clone
     * close
@@ -121,7 +126,7 @@ which ops appear to be implemented.
     * eval
     * ls-sessions
 * [ruby-nrepl-server](https://github.com/chrisblatchley/ruby-nrepl-server) -
-  abandoned?
+  for ruby by chrisblatchley (abandoned?)
   * standard ops
     * clone
     * eval
