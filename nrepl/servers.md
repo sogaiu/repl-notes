@@ -88,8 +88,6 @@ which ops appear to be implemented.
     * describe
     * eval
     * interrupt
-    * load-file
-    * ls-sessions
   * non-standard ops
     * eval_pause
     * eval_resume
